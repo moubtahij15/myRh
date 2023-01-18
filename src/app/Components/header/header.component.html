@@ -1,0 +1,83 @@
+<header aria-label="Site Header" class="bg-white">
+  <div
+    class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-10 sm:px-6 lg:px-8"
+  >
+    <a class=" text-teal-600 mx-6"
+       routerLink="/">
+      <span class="sr-only">Home</span>
+      <img class="w-16" src="../../../assets/logo.png" alt=""/>
+
+    </a>
+
+    <div class="flex flex-1 items-center justify-end md:justify-between">
+      <nav aria-label="Site Nav" class="hidden md:block">
+
+      </nav>
+
+      <div class="flex items-center gap-4 mr-2">
+        <a *ngIf="!isLoggedIn()"
+           class=" flex hidden rounded-md bg-gray-50 px-5 py-2.5 text-sm font-medium  text-[#6C2D6B] transition hover:text-teal-600/75 sm:block"
+
+           routerLink="register"
+        >
+            <span class="flex px-0.5">
+               <img class=" pr-0.5 w-6" src="https://www.kerix.net/assets/img/icons/add.png" alt=""/>
+
+            inscription entreprise
+            </span>
+
+        </a>
+        <a *ngIf="isLoggedIn()&&isRecruteur()"
+           class=" flex hidden rounded-md bg-gray-50 px-5 py-2.5 text-sm font-medium  text-[#6C2D6B] transition hover:text-teal-600/75 sm:block"
+           routerLink="addOffre"
+        >
+            <span class="flex px-0.5">
+               <img class=" pr-0.5 w-6" src="https://www.kerix.net/assets/img/icons/add.png" alt=""/>
+
+            Ajouter une Offre
+            </span>
+
+        </a>
+        <div *ngIf="!isLoggedIn()" class="sm:flex sm:gap-4">
+          <a
+            class="block rounded-md bg-[#6C2D6B] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
+            routerLink="login"
+          >
+            Login
+          </a>
+
+
+        </div>
+        <div *ngIf="isLoggedIn()" (click)="logout()" class="sm:flex sm:gap-4">
+          <a
+            class="block rounded-md bg-[#6C2D6B] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
+            href="/"
+          >
+            Logout
+          </a>
+        </div>
+
+
+        <button
+          class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+        >
+          <span class="sr-only">Toggle menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

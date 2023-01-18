@@ -1,0 +1,119 @@
+<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+  <img
+    alt="Office"
+    [src]="data.img_url"
+    class="h-56 w-full object-cover"
+  />
+
+  <div class="bg-white p-4 sm:p-6">
+    <time datetime="2022-10-10" class="block text-xs text-gray-500">
+      10th Oct 2022
+    </time>
+
+    <a href="#">
+      <h3 class="mt-0.5 text-lg text-gray-900">
+        {{data.titre}}
+      </h3>
+    </a>
+
+    <p class="mt-2 text-xs leading-relaxed text-gray-500 line-clamp-3">
+      {{data.description}}
+    </p>
+    <div class="mt-6 grid grid-cols-3  px-3 gab-3 items-center  text-xs">
+      <div class="sm:inline-flex sm:shrink-0 ">
+        <svg class="h-4 w-4 text-indigo-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M480 48c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48V96H224V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V96H112V24c0-13.3-10.7-24-24-24S64 10.7 64 24V96H48C21.5 96 0 117.5 0 144v96V464c0 26.5 21.5 48 48 48H304h32 96H592c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H480V48zm96 320v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM240 416H208c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zM128 400c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM560 256c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32zM256 176v32c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM112 160c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32zM256 304c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM112 320H80c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm304-48v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM400 64c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h32zm16 112v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z"/>
+        </svg>
+
+        <div class=" mt-1.5 sm:ml-3 sm:mt-0">
+          <p class="amt-3 text-gray-500 m-0">Ville</p>
+          <p class="font-medium m-0">{{data.ville}}</p>
+        </div>
+      </div>
+
+      <div class="sm:inline-flex sm:shrink-0 ">
+        <svg
+          class="h-4 w-4 text-indigo-700"
+
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M88 104C88 95.16 95.16 88 104 88H152C160.8 88 168 95.16 168 104V152C168 160.8 160.8 168 152 168H104C95.16 168 88 160.8 88 152V104zM280 88C288.8 88 296 95.16 296 104V152C296 160.8 288.8 168 280 168H232C223.2 168 216 160.8 216 152V104C216 95.16 223.2 88 232 88H280zM88 232C88 223.2 95.16 216 104 216H152C160.8 216 168 223.2 168 232V280C168 288.8 160.8 296 152 296H104C95.16 296 88 288.8 88 280V232zM280 216C288.8 216 296 223.2 296 232V280C296 288.8 288.8 296 280 296H232C223.2 296 216 288.8 216 280V232C216 223.2 223.2 216 232 216H280zM0 64C0 28.65 28.65 0 64 0H320C355.3 0 384 28.65 384 64V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM48 64V448C48 456.8 55.16 464 64 464H144V400C144 373.5 165.5 352 192 352C218.5 352 240 373.5 240 400V464H320C328.8 464 336 456.8 336 448V64C336 55.16 328.8 48 320 48H64C55.16 48 48 55.16 48 64z"/>
+        </svg>
+
+        <div class="mt-1.5 sm:ml-3 sm:mt-0">
+          <p class="text-gray-500">Entreprise</p>
+
+          <p class="font-medium">{{data.entreprise_name}}</p>
+        </div>
+      </div>
+
+      <div class="sm:inline-flex mb-0 sm:shrink-0 ">
+        <svg
+          class="h-4 w-4 text-indigo-700"
+
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM256 416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H256V416zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"/>
+        </svg>
+        <div class="mt-1.5 mb-0 sm:ml-3 sm:mt-0">
+          <p class=" text-gray-500">Niveau d'études souhaité
+
+          </p>
+
+          <p class="text-start font-medium">{{data.etude}}</p>
+        </div>
+      </div>
+      <div class="sm:inline-flex sm:shrink-0 ">
+        <svg class="h-4 w-4 text-indigo-700"
+             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M368 344h96c13.25 0 24-10.75 24-24s-10.75-24-24-24h-96c-13.25 0-24 10.75-24 24S354.8 344 368 344zM208 320c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C144 291.3 172.7 320 208 320zM512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM528 416c0 8.822-7.178 16-16 16h-192c0-44.18-35.82-80-80-80h-64C131.8 352 96 387.8 96 432H64c-8.822 0-16-7.178-16-16V160h480V416zM368 264h96c13.25 0 24-10.75 24-24s-10.75-24-24-24h-96c-13.25 0-24 10.75-24 24S354.8 264 368 264z"/>
+        </svg>
+
+        <div class=" mt-1.5 sm:ml-3 sm:mt-0">
+          <p class="amt-3 text-gray-500 m-0">Profile</p>
+          <p class="font-medium m-0">{{data.profile}}</p>
+        </div>
+      </div>
+      <div class="sm:inline-flex sm:shrink-0 ">
+        <svg class="h-4 w-4 text-indigo-700"
+
+             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+        </svg>
+        <div class="mt-1.5 sm:ml-3 sm:mt-0">
+          <p class="text-gray-500">Telephone
+          </p>
+          <p class="text-center font-medium">{{data.tel}}</p>
+        </div>
+      </div>
+
+      <div class="sm:inline-flex sm:shrink-0 ">
+        <svg class="h-4 w-4 text-indigo-700"
+
+             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+        </svg>
+
+        <div class="mt-1.5 sm:ml-3 sm:mt-0 w-3/4">
+          <p class="text-gray-500">Email</p>
+
+          <p class="text-xs font-medium ">{{data.email}}</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</article>
